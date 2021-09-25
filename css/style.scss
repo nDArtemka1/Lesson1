@@ -293,10 +293,12 @@ button {
     display: flex;
     justify-content: center;
     transition: 2s;
-    :hover {
-        transform: rotateY(360deg);
-    }
 }
+.button__wrap:hover {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  
 
 .advantages {
     padding: 104px 0;
@@ -664,12 +666,13 @@ ul.pagination li a:hover {
     transition: 0.5s;
     img {
         transition: 1s;
-        :hover {
-            transform: scale(1.2); 
-           }
     }
 }
 
+.item img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 
 .item:hover {
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
