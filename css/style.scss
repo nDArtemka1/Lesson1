@@ -292,6 +292,10 @@ button {
 .button__wrap {
     display: flex;
     justify-content: center;
+    transition: 2s;
+    :hover {
+        transform: rotateY(360deg);
+    }
 }
 
 .advantages {
