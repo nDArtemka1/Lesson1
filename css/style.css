@@ -799,18 +799,9 @@ ul.pagination li a:hover {
   min-height: 281px;
   margin-bottom: 20px;
   padding-bottom: 10px;
+  position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.item img {
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.item img:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
 }
 
 .item:hover {
