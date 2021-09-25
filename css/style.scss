@@ -292,7 +292,13 @@ button {
 .button__wrap {
     display: flex;
     justify-content: center;
+    transition: 2s;
 }
+.button__wrap:hover {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  
 
 .advantages {
     padding: 104px 0;
@@ -651,13 +657,22 @@ ul.pagination li a:hover {
 .item {
     width: 360px;
     margin: 5px;
+    display: inline-block;
     overflow: hidden;
     min-height: 281px;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    position: relative;
+    //position: relative;
     transition: 0.5s;
+    img {
+        transition: 1s;
+    }
 }
+
+.item img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 
 .item:hover {
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
@@ -706,6 +721,7 @@ button:hover {
     height: 420px;
     background-color: #e9e9e9;
 }
+
 
 .btn__product {
     width: 211px;
@@ -788,7 +804,7 @@ button:hover {
 }
 
 .slider {
-    background-color: rgb(251 249 249);
+    background-color: #EAEAEA;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -866,7 +882,7 @@ button:hover {
         display: flex;
         justify-content: space-between;
         margin: 96px 0 40px 0;
-        box-shadow: 0px 5px 8px 0px rgb(0 0 0 / 15%);
+        box-shadow: #5a5555(0 0 0 / 15%);
 
         &-column {
             display: flex;
@@ -936,5 +952,5 @@ button:hover {
 .button__card-text-product {
     align-items: center;
     text-decoration: none;
-    color: #F16D7F; 
+    color: #F16D7F;
 }
