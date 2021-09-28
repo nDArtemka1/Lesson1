@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1221,7 +1222,7 @@ button:hover {
 
 .registration__form {
   width: 360px;
-  margin: 0 0 96px 0;
+  margin: 0 128px 96px 0;
 }
 
 .registration__form a {
@@ -1234,6 +1235,15 @@ button:hover {
 
 .registration__form a img {
   margin: 0 30px 0 20px;
+}
+
+.registration__form p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
 }
 
 .registration__form-p {
@@ -1289,5 +1299,47 @@ button:hover {
   border: 1px solid #a4a4a4;
   background: #ffffff;
   cursor: pointer;
+}
+
+.registration__description {
+  width: 652px;
+  margin: 64px 0 0 0;
+}
+
+.registration__description p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration__description ol {
+  list-style: none;
+}
+
+.registration__description ol > li {
+  padding-left: 20px;
+  position: relative;
+  margin: 16px 0;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration__description ol > li:before {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  color: black;
+}
+
+.registration__description-loyalty {
+  margin: 22px 0;
 }
 /*# sourceMappingURL=style.css.map */
