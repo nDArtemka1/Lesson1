@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -22,7 +23,13 @@ a {
 .header {
   background-color: #222222;
   padding: 19px 0;
+
+  &__right {
+    display: flex;
+    position: relative;
+  }
 }
+
 
 .header__wrap {
   display: flex;
