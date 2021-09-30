@@ -5,7 +5,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
@@ -23,11 +27,86 @@ a {
 .header {
   background-color: #222222;
   padding: 19px 0;
+  z-index: 2;
+
+  &__menu {
+    cursor: pointer;
+  }
 
   &__right {
     display: flex;
     position: relative;
   }
+
+  &__nav {
+    position: absolute;
+    top: 64px;
+    right: -270px;
+    z-index: 10;
+  }
+
+  .nav {
+    width: 232px;
+    background-color: rgb(255, 255, 255);
+    height: calc(100vh - 63px);
+    padding: 20px;
+    
+
+    &__title {
+      margin: 9px 0 24px 14px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+
+    &__heading {
+      margin: 0 0 12px 14px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #F16D7F;
+    }
+
+    &__list {
+      margin: 0 0 20px 35px;
+    }
+
+    &__item {
+      margin: 0 0 11px 0;
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 17px;
+      color: #6F6E6E;
+    }
+  }
+
+  .nav__wrap {
+    position: relative;
+  }
+
+  .nav__close {
+    position: absolute;
+    cursor: pointer;
+    right: -10px;
+    top: -10px;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  #burger:checked~.header__nav {
+    display: block;
+  }
+
+  #burger:not(checked)~.header__nav {
+    display: none;
+  }
+
 }
 
 
@@ -45,7 +124,7 @@ a {
 }
 
 .intro {
-  height: 764px;
+  height: calc(100vh - 63px);
   background-color: #f1e4e6;
   margin: 0 0 65px 0;
 }
@@ -288,6 +367,7 @@ button {
   justify-content: center;
   transition: 2s;
 }
+
 .button__wrap:hover {
   -webkit-transform: rotateY(360deg);
   transform: rotateY(360deg);
@@ -482,7 +562,7 @@ svg path {
 
 .nav__wrap {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background: #f8f3f4;
 }
 
@@ -518,7 +598,7 @@ svg path {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
-.filter[open] > summary {
+.filter[open]>summary {
   color: $theme-color;
   outline: none;
   border: none;
@@ -936,14 +1016,17 @@ button:hover {
   width: 360px;
   background: #f5f3f3;
   margin: 57px 0 0 0;
+
   &-text {
     margin: 40px 34px 21px 0;
   }
+
   h3 {
     font-size: 11px;
     line-height: 13px;
     color: #4a4a4a;
   }
+
   h4 {
     margin: 12px 0 0 0;
     font-family: Lato;
@@ -952,6 +1035,7 @@ button:hover {
     font-size: 16px;
     line-height: 19px;
     color: #222222;
+
     span {
       color: #f16d7f;
     }
@@ -981,6 +1065,7 @@ button:hover {
 .registration {
   display: flex;
   justify-content: space-between;
+
   &__form {
     width: 360px;
     margin: 0 128px 96px 0;
@@ -996,6 +1081,7 @@ button:hover {
         margin: 0 30px 0 20px;
       }
     }
+
     p {
       font-family: Lato;
       font-style: normal;
@@ -1008,6 +1094,7 @@ button:hover {
     &-p {
       margin: 64px 0 20px 0;
     }
+
     &-p2 {
       margin: 0 0 20px 0;
     }
@@ -1056,6 +1143,7 @@ button:hover {
   &__description {
     width: 652px;
     margin: 64px 0 0 0;
+
     p {
       font-family: Lato;
       font-style: normal;
@@ -1064,10 +1152,12 @@ button:hover {
       line-height: 29px;
       color: #000000;
     }
+
     ol {
       list-style: none;
     }
-    ol > li {
+
+    ol>li {
       padding-left: 20px;
       position: relative;
       margin: 16px 0;
@@ -1078,13 +1168,15 @@ button:hover {
       line-height: 29px;
       color: #000000;
     }
-    ol > li:before {
+
+    ol>li:before {
       content: "✔";
       position: absolute;
       top: 0;
       left: -10px;
       color: rgb(0, 0, 0);
     }
+
     &-loyalty {
       margin: 22px 0;
     }
