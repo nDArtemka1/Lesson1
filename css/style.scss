@@ -50,7 +50,7 @@ a {
     background-color: rgb(255, 255, 255);
     height: calc(100vh - 63px);
     padding: 20px;
-    
+
 
     &__title {
       margin: 9px 0 24px 14px;
@@ -1180,5 +1180,145 @@ button:hover {
     &-loyalty {
       margin: 22px 0;
     }
+  }
+}
+
+
+
+
+// Адаптивная верстка
+
+@media (max-width: 768px) {
+
+  .header {
+
+    .nav {
+      height: calc(94vh - 64px);
+    }
+
+    &__nav {
+      right: -10px;
+      overflow: scroll;
+    }
+  }
+
+  .intro {
+
+    &__wrap {
+      background-position: -100px bottom;
+      background-size: contain;
+    }
+  }
+
+  .cotegory__item:not(:last-child) {
+    width: 32%;
+
+  }
+
+  .advantages {
+    padding: 48px 0 16px 0;
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    &__item {
+      margin: 0 0 48px 0;
+    }
+  }
+
+  .contact {
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__form {
+      margin: 0 0 110px 0;
+    }
+
+    &__item {
+      margin: 54px 0 48px 0;
+    }
+  }
+
+  .footer {
+
+    &__description {
+      margin: 0 0 0 32px;
+    }
+  }
+
+  .social__nav {
+    margin: 0 32px 0 0;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+
+  .intro {
+
+    &__wrap {
+      background-image: none;
+      justify-content: space-around;
+    }
+
+    &__text {
+      max-width: 270px;
+
+      h1 {
+        font-size: 38px;
+        line-height: 46px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .cotegory__item:not(:last-child) {
+    width: 100%;
+  }
+
+  .subscribe__description {
+    width: 100%;
+
+    p {
+      font-size: 15px;
+    }
+
+    strong {
+      font-size: 26px;
+    }
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+
+  .footer__wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer__description {
+    margin: 0 0 -25px 0;
+}
+
+  .social__nav {
+    margin: 13px 0 40px 0;
   }
 }

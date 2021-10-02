@@ -1427,4 +1427,114 @@ button:hover {
 .registration__description-loyalty {
   margin: 22px 0;
 }
+
+@media (max-width: 768px) {
+  .header .nav {
+    height: calc(94vh - 64px);
+  }
+  .header__nav {
+    right: -10px;
+    overflow: scroll;
+  }
+  .intro__wrap {
+    background-position: -100px bottom;
+    background-size: contain;
+  }
+  .cotegory__item:not(:last-child) {
+    width: 32%;
+  }
+  .advantages {
+    padding: 48px 0 16px 0;
+  }
+  .advantages__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages__item {
+    margin: 0 0 48px 0;
+  }
+  .contact__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__form {
+    margin: 0 0 110px 0;
+  }
+  .contact__item {
+    margin: 54px 0 48px 0;
+  }
+  .footer__description {
+    margin: 0 0 0 32px;
+  }
+  .social__nav {
+    margin: 0 32px 0 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .intro__wrap {
+    background-image: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .intro__text {
+    max-width: 270px;
+  }
+  .intro__text h1 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .intro__text span {
+    font-size: 20px;
+  }
+  .cotegory__item:not(:last-child) {
+    width: 100%;
+  }
+  .subscribe__description {
+    width: 100%;
+  }
+  .subscribe__description p {
+    font-size: 15px;
+  }
+  .subscribe__description strong {
+    font-size: 26px;
+  }
+  .contact__form {
+    width: 100%;
+  }
+  .footer__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__description {
+    margin: 0 0 -25px 0;
+  }
+  .social__nav {
+    margin: 13px 0 40px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
